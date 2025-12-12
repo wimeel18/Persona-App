@@ -1,0 +1,60 @@
+<Hallog>:
+    MDFloatLayout:
+        md_bg_color: ("#fff9e1")
+    Image:
+        source:"kv/asset/foto/logoPersonaQuest.png"
+        size_hint: .5 , .5
+        pos_hint: {"center_x": 0.52,"center_y": 0.78}
+    MDLabel:
+        text: "Selamat Datang di Persona Quest!"
+        halign: "center"
+        font_size: "30sp"
+        font_name: "TT-Slabs"
+        pos_hint: {"center_y": 0.50}
+        color: ("#33428cff")
+    MDLabel:
+        text: "Masuk untuk melanjutkan"
+        halign: "center"
+        font_size: "17sp"
+        font_name: "Monradok"
+        pos_hint: {"center_x":0.50, "center_y": 0.45}
+        color:("#000000ff")
+    MDTextField:
+        id: email 
+        hint_text: "Email"
+        mode: "rectangle"
+        icon_left: "account"
+        size_hint: 0.65, 0.10
+        pos_hint:{"center_x": 0.5, "center_y": 0.35}
+    MDTextField:
+        id: password
+        hint_text: "Password"
+        password: True
+        mode: "rectangle"
+        icon_left: "key-variant"
+        size_hint: 0.65, 0.10
+        pos_hint:{"center_x": 0.5, "center_y": 0.25}
+    MDRaisedButton:
+        text: "L o g i n"
+        font_size: "16sp"
+        font_name: "OpenSans"
+        size_hint: 0.30, 0.02
+        pos_hint:{"center_x": 0.5, "center_y": 0.15}
+        md_bg_color: ("#33428c")
+        on_release: root.loginAcc()
+    MDLabel:
+        text: "Don't have account?" 
+        halign: "center"
+        font_size: "16sp"
+        font_name: "OpenSans"
+        pos_hint: {"center_x": 0.48, "center_y": 0.07}
+        color: ("#000000ff")
+    MDTextButton:
+        text: "Sign Up"
+        halign: "center"
+        font_size: "16sp"
+        font_name: "OpenSans"
+        pos_hint: {"center_x": 0.57, "center_y": 0.07}
+        color: ("#33428c")
+        on_release:
+            root.manager.current = "daftar"

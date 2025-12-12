@@ -1,0 +1,109 @@
+<Daftar>:
+    MDFloatLayout:
+        md_bg_color: ("#fff9e1")
+    #Image:
+    #    source:"kv/asset/foto/logoPersonaQuest.png"
+    #    size_hint: .5 , .5
+    #    pos_hint: {"center_x": 0.52,"center_y": 0.78}
+    Image:
+        source:"kv/asset/foto/logoPersonaQuest.png"
+        size_hint: .3 , .3
+        pos_hint:{"center_x": 0.51, "center_y": 0.85}
+    MDLabel:
+        text: "Sign Up"
+        halign: "center"
+        font_size: "35sp"
+        font_name: "TT-Slabs"
+        pos_hint: {"center_x": 0.21, "center_y": 0.68}
+        color: ("#33428cff")
+    #MDLabel:
+     #   text: "Masuk untuk melanjutkan"
+     #   halign: "center"
+     #   font_size: "16sp"
+     #   font_name: "Monradok"
+     #   pos_hint: {"center_x":0.50, "center_y": 0.45}
+     #   color: ("#000000ff")
+    MDTextField:
+        id: username
+        hint_text: "Username"
+        mode: "rectangle"
+        icon_left: "account"
+        size_hint: 0.70, 0.09
+        pos_hint: {"center_x": 0.5, "center_y": 0.60}
+    MDTextField:
+        id: email 
+        hint_text: "Email Aktif"
+        mode: "rectangle"
+        icon_left: "email-check-outline"
+        size_hint: 0.70, 0.09
+        pos_hint: {"center_x": 0.5, "center_y": 0.50}
+    MDTextField:
+        id: nohp
+        hint_text: "No HP Aktif"
+        mode: "rectangle"
+        icon_left: "cellphone-basic"
+        size_hint: 0.70, 0.09
+        pos_hint: {"center_x": 0.5, "center_y": 0.30}
+    MDTextField:
+        id: password
+        password : True
+        hint_text: "Password Min 8 Karakter"
+        mode: "rectangle"
+        icon_left: "key-variant"
+        size_hint: 0.34, 0.09
+        pos_hint: {"center_x": 0.32, "center_y": 0.40}
+    MDTextField:
+        id: passconf
+        password : True
+        hint_text: "konfirmasi"
+        mode: "rectangle"
+        icon_left: "key-variant"
+        size_hint: 0.34, 0.09
+        pos_hint: {"center_x": 0.68, "center_y": 0.40}
+    MDRaisedButton:
+        text: "L o g i n"
+        font_size: "16sp"
+        font_name: "OpenSans"
+        size_hint: 0.30, 0.02
+        pos_hint:{"center_x": 0.68, "center_y": 0.15}
+        md_bg_color: ("#33428cff")
+        on_release:
+            root.manager.current = "hallog"
+    MDRaisedButton:
+        text: "D a f t a r"
+        font_size: "16sp"
+        font_name: "OpenSans"
+        size_hint: 0.30, 0.02
+        pos_hint: {"center_x": 0.32, "center_y": 0.15}
+        md_bg_color: ("#33428c")
+        on_press: root.submit()
+    #MDRaisedButton:
+    #    text: "Login dengan Google"
+    #    font_size: "16sp"
+    #    font_name: "Monradok"
+    #    text_color:("#00000")
+    #    size_hint: 0.66, 0.02
+    #    pos_hint:{"center_x": 0.5, "center_y": 0.28}
+    #    md_bg_color: ("#23f2eb")
+    #MDRaisedButton:
+        #text: "Login dengan Facebook"
+        #font_size: "16sp"
+        #font_name: "Atma"
+        #text_color:("#00000")
+        #size_hint: 0.66, 0.02
+        #pos_hint:{"center_x": 0.5, "center_y": 0.19}
+        #md_bg_color: ("#38b6ff")
+   # MDLabel:
+   #     text: "Don't have account?"
+   #     halign: "center"
+   #     font_size: "16sp"
+   #     font_name: "OpenSans"
+   #     pos_hint: {"center_x": 0.48, "center_y": 0.10}
+   #     color: ("#000000ff")
+    #MDLabel:
+     #   text: "Sign Up"
+     #   halign: "center"
+     #   font_size: "16sp"
+     #   font_name: "OpenSans"
+     #   pos_hint: {"center_x": 0.57, "center_y": 0.10}
+     #   color: ("#33428c")
